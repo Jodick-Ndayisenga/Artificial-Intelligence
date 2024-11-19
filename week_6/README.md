@@ -35,7 +35,7 @@ Welcome to the **Introduction to Neural Networks and Deep Learning** course! Thi
 ### 2.1 Neurons
 Each neuron performs a simple computation using the equation:
 
-$ z = w_1x_1 + w_2x_2 + \dots + w_nx_n + b $
+$z = w_1x_1 + w_2x_2 + \dots + w_nx_n + b$
 
 where:
 - \( z \) is the neuron's raw output.
@@ -64,22 +64,19 @@ Activation functions introduce non-linearity, enabling neural networks to model 
 
 ### 3.2 Common Activation Functions
 - **Sigmoid Function**:
-  $
-  \sigma(z) = \frac{1}{1 + e^{-z}}
-  $
-  Maps input to a range between 0 and 1, often used in binary classification.
+$\sigma(z) = \frac{1}{1 + e^{-z}}$
+
+Maps input to a range between 0 and 1, often used in binary classification.
 
 - **ReLU (Rectified Linear Unit)**:
-  $
-  f(z) = \max(0, z)
-  $
-  Commonly used in hidden layers, it outputs 0 for negative inputs and the input itself for positive values.
+$f(z) = \max(0, z)$
+
+  
+Commonly used in hidden layers, it outputs 0 for negative inputs and the input itself for positive values.
 
 - **Softmax Function**:
-  $
-  \text{softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^N e^{z_j}}
-  $
-  Normalizes output to represent probabilities across multiple classes, used in multi-class classification.
+$\text{softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^N e^{z_j}}$
+Normalizes output to represent probabilities across multiple classes, used in multi-class classification.
 
 ---
 
@@ -104,15 +101,12 @@ For a network with two inputs, two layers, and one output, follow the computatio
 Loss functions measure how well predictions match the actual target values.
 
 ### 5.2 Common Loss Functions
+
 - **Mean Squared Error (MSE)** for regression:
-  $
-  MSE = \frac{1}{n}\sum_{i=1}^n (y_i - \hat{y}_i)^2
-  $
+$MSE = \frac{1}{n}\sum_{i=1}^n (y_i - \hat{y}_i)^2$
 
 - **Cross-Entropy Loss** for classification:
-  $
-  L = -\sum_{i=1}^n y_i \cdot \log(\hat{y}_i)
-  $
+$L = -\sum_{i=1}^n y_i \cdot \log(\hat{y}_i)$
 
 ---
 
@@ -127,10 +121,9 @@ Backpropagation adjusts weights based on prediction errors, using calculus (the 
 
 ### 6.3 Updating Weights Using Gradient Descent
 - **Gradient Descent**:
-  $
-  w = w - \alpha \frac{\partial L}{\partial w}
-  $
-  where \( \alpha \) is the learning rate, controlling the step size.
+$w = w - \alpha \frac{\partial L}{\partial w}$
+
+where \( \alpha \) is the learning rate, controlling the step size.
 
 - **Learning Rate**: A crucial parameter for efficient learning.
 - **Variants**: Introduce Stochastic and Mini-Batch Gradient Descent for large datasets.

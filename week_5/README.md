@@ -27,9 +27,9 @@ $P(A|B) = \frac{P(A \cap B)}{P(B)}$
 
 where:
 
-- $P(A∣B)P(A∣B)$ is the probability of A happening given B has happened.
-- $P(A∩B)P(A∩B)$ is the probability that both A and B happen.
-- $P(B)P(B)$ is the probability of B happening.
+- $P(A∣B)$ is the probability of A happening given B has happened.
+- $P(A∩B)$ is the probability that both A and B happen.
+- $P(B)$ is the probability of B happening.
 
 #### **b. Bayes' Theorem**
 Bayes’ Theorem calculates the probability of an event (like crop being unhealthy) based on evidence (like leaf color or soil moisture).

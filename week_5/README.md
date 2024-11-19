@@ -22,24 +22,42 @@ The **Naive Bayes** classifier is based on Bayes' Theorem, which we’ll explore
 - If **Crop A** thrives in moist soil, **the probability of a crop being Crop A given that the soil is moist** is a conditional probability.
 
 Formula:  
-\[
-P(A|B) = \frac{P(A \cap B)}{P(B)}
-\]
+
+$P(A|B) = \frac{P(A \cap B)}{P(B)}$
+
+where:
+
+- $P(A∣B)P(A∣B)$ is the probability of A happening given B has happened.
+- $P(A∩B)P(A∩B)$ is the probability that both A and B happen.
+- $P(B)P(B)$ is the probability of B happening.
 
 #### **b. Bayes' Theorem**
 Bayes’ Theorem calculates the probability of an event (like crop being unhealthy) based on evidence (like leaf color or soil moisture).
 
 Formula:  
-\[
-P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
-\]
 
-**Example**:
-Determine if a crop is **unhealthy** based on whether the leaves are yellow:
-- **A** = Crop is unhealthy.
-- **B** = Leaves are yellow.
+$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$
 
-Bayes’ theorem helps find \( P(A|B) \), the probability that a crop is unhealthy given its leaves are yellow.
+Where:
+
+- $P(A∣B)$ = Probability that event A happens given B (posterior probability).
+- $P(B∣A)$ = Probability that event B happens given A (likelihood).
+- $P(A)$ = Probability of A happening (prior probability).
+- $P(B)$ = Probability of B happening (marginal probability).
+
+Example in Agronomy: Suppose you’re trying to determine if a crop is unhealthy based on whether the leaves are yellow.
+
+- Let **A** = Crop is unhealthy.
+- Let **B** = Leaves are yellow.
+
+With data from past observations:
+
+- $P(A)$: Probability that a crop is generally unhealthy.
+- $P(B∣A)$: Probability that leaves are yellow given that the crop is unhealthy.
+- $P(B)$: Overall probability of observing yellow leaves on any crop.
+
+Using these probabilities, Bayes' theorem helps us find \( P(A|B) \), the probability that a crop is unhealthy given that its leaves are yellow.
+
 
 #### **c. Assumptions of Naive Bayes**
 Naive Bayes assumes all features (like soil moisture, pest presence) are **independent**, given the class (e.g., healthy or unhealthy crop). Despite this unrealistic assumption, Naive Bayes often performs well and is computationally efficient.

@@ -222,7 +222,3 @@ Welcome to the Machine Learning course! This course is structured over several w
 ## Final Project
 
 In this final project, you will apply the skills and knowledge you've gained throughout the course to solve a real-world problem. Choose a problem, gather and preprocess data, build and train your model, and deploy your solution for end users to interact with.
-
----
-
-Each week includes hands-on coding activities and projects to deepen your understanding of machine learning concepts. By the end of the course, you’ll have a robust knowledge of machine learning models and techniques, along with practical experience in implementing and deploying these models.
